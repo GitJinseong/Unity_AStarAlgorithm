@@ -45,6 +45,14 @@ public class TerrainMap : TileMapController
         mapCellGap.y = allTileObjs[mapCellSize.x].transform.localPosition.y -
             allTileObjs[0].transform.localPosition.y;
         // } x 축 상의 두 타일과, y 축 상의 두 타일 사이의 로컬 포지션으로 타일 갭을 연산한다.
+
+        // [버그]
+        // 현재 오브젝트 2개의 값이 일치하는 버그가 발생한다.
+        Debug.Log(allTileObjs[0].transform.localPosition.x);
+        Debug.Log(allTileObjs[1].transform.localPosition.x);
+        Debug.Log(allTileObjs[0].transform.localPosition.y);
+        Debug.Log(allTileObjs[1].transform.localPosition.y);
+
     }       // InitAwake()
 
     private void Start()

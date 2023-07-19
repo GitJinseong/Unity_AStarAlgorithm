@@ -16,6 +16,10 @@ public class MapBoard : MonoBehaviour
     {
         // { 매니저 스크립트를 초기화한다.
         ResManager.Instance.Create();
+
+        // PathFinder 초기화
+        PathFinder.Instance.Create();
+        PathFinder.Instance.mapBoard = this;
         // } 매니저 스크립트를 초기화한다.
 
         // { 맵에 지형을 초기화하여 배치한다.
@@ -88,12 +92,22 @@ public class MapBoard : MonoBehaviour
     public Vector2Int GetDistance2D(GameObject targetTerrainObj,
         GameObject destTerrainObj)
     {
+        Debug.Log(destTerrainObj.transform.localPosition);
+        Debug.Log(targetTerrainObj.transform.localPosition);
+
         Vector2 localDistance = destTerrainObj.transform.localPosition -
             targetTerrainObj.transform.localPosition;
+        Debug.Log(localDistance);
 
         Vector2Int distance2D = Vector2Int.zero;
+
         distance2D.x = Mathf.RoundToInt(localDistance.x / MapCellGap.x);
+        Debug.Log(Mathf.RoundToInt(localDistance.x));
+        Debug.Log(Mathf.RoundToInt(MapCellGap.x));
+
+
         distance2D.y = Mathf.RoundToInt(localDistance.y / MapCellGap.y);
+
         distance2D = GFunc.Abs(distance2D);
 
         return distance2D;

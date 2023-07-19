@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7299216973658165829, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
       propertyPath: m_Name
-      value: Ocean_Plain
+      value: Tile_Ocean
       objectReference: {fileID: 0}
     - target: {fileID: 7916280351383972950, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
       propertyPath: m_Sprite
@@ -64,6 +64,10 @@ PrefabInstance:
       value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 8270591498998301063, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8270591498998301063, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -93,11 +97,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8270591498998301063, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.896
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8270591498998301063, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.896
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 8270591498998301063, guid: 91d1dc612d8200f4aaae53a1c115af0d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

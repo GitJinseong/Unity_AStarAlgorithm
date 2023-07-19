@@ -103,6 +103,7 @@ public class TerrainMap : TileMapController
             }
 
             // TODO: tempTerrain Setup 함수 필요함.
+            tempTerrain.SetupTerrain(mapController, terrainType, loopCnt);
             tempTerrain.transform.SetAsFirstSibling();
             allTerrains.Add(tempTerrain);
             loopCnt += 1;
